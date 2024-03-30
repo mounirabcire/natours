@@ -1,0 +1,56 @@
+body {
+    padding: 3rem;
+    color: $color-gray-dark;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    // font-size: 16px;
+    line-height: 1.7;
+}
+
+.heading-primary {
+    margin-bottom: 6rem;
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: 400;
+    // hide the back face of an element when facing the user.
+    backface-visibility: hidden;
+
+    &--main {
+        display: block;
+        font-size: 6rem;
+        letter-spacing: 3.5rem;
+        animation-name: moveInLeft;
+        animation-duration: 0.6s;
+    }
+
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        letter-spacing: 1.74rem;
+        font-weight: 700;
+        animation-name: moveInRight;
+        animation-duration: 0.6s;
+    }
+}
+
+.heading-secondary {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    background-image: linear-gradient(
+        to right,
+        $color-primary-light,
+        $color-primary-darrk
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.3s;
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: 0.5rem 1rem 2rem rgba($color-dark, 0.2);
+    }
+}
