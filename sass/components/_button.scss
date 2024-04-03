@@ -6,7 +6,7 @@
         border-radius: 5rem;
         text-transform: uppercase;
         text-decoration: none;
-        font-size: 1.6rem;
+        font-size: $default-font-size;
         position: relative;
     }
 
@@ -53,5 +53,29 @@
         animation-delay: 0.6s;
         /*  */
         animation-fill-mode: backwards;
+    }
+}
+
+.btn-txt {
+    &:link,
+    &:visited {
+        display: inline-block;
+        padding: 3px;
+        color: $color-primary-darrk;
+        text-decoration: none;
+        font-size: $default-font-size;
+        border-bottom: 1px solid $color-primary-darrk;
+        transition: all 0.2s;
+    }
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-primary-darrk;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 50px rgba($color-dark, 0.2);
+    }
+
+    &:active {
+        transform: translateY(1px);
     }
 }

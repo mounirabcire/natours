@@ -1,0 +1,47 @@
+.card {
+    height: 50rem;
+    // ***********************************
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+
+    &__side {
+        width: 100%;
+        height: 50rem;
+        font-size: 2rem;
+        color: $color-white;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-dark, 0.15);
+        background-color: orangered;
+        // hide the back part of the elemnt
+        backface-visibility: hidden;
+        transition: all 0.8s ease-in;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        &--front {
+            background-color: $color-white;
+        }
+
+        &--back {
+            transform: rotateY(0.5turn);
+
+            &-1 {
+                background-image: linear-gradient(
+                    to bottom right,
+                    $color-secondary-light,
+                    $color-secondary-dark
+                );
+            }
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-0.5turn);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+}

@@ -2,12 +2,20 @@
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-darrk: #28b485;
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
 $color-dark: #000;
 $color-white: #fff;
 $color-gray-dark: #777;
 $color-gray-light-1: #f7f7f7;
 
+//Fonts
+$default-font-size: 1.6rem;
+
 // Grid;
 $gird-witdth: 114rem;
-$grid-gutter-vert: 4rem;
-$grid-gutter-hori: 2rem;
+$grid-gutter-vert: 8rem;
+$grid-gutter-hori: 6rem;

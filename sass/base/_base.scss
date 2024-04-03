@@ -1,3 +1,4 @@
+*,
 *::after,
 *::before {
     margin: 0;
@@ -6,10 +7,12 @@
 }
 
 html {
-    // 0.625 * 16 (default browser font size) = 10px;
+    // This defines what 1rem actually is 
+    // 0.625 * 16 (default browser font size = 10px;)
     // we choose 10px, because it's easy to work with 'rem', 1rem = 10px, 2rem = 20px, 7.5px = 0.75rem
     // if the user changes the default browser font size, it'll be adapted
     // ex: a user changes the font size to 20px, the actual size will be: 0.625 * 20 = 12.5
+    // that's why I used percentage
     font-size: 62.5%;
 }
 

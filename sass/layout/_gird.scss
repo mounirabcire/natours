@@ -1,7 +1,6 @@
 .row {
     max-width: $gird-witdth;
     margin: 0 auto;
-    background: #eee;
 
     &:not(:last-child) {
         margin-bottom: $grid-gutter-vert;
@@ -15,8 +14,6 @@
     // [class$="col-"]
     // select all the classes that start with 'col-';
     [class^="col-"] {
-        background: #ffa500;
-        // ********************************
         float: left;
 
         &:not(:last-child) {
