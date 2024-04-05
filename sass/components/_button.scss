@@ -47,6 +47,16 @@
         }
     }
 
+    &--green {
+        margin-inline: auto;
+        background-color: $color-primary-darrk;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary-darrk;
+        }
+    }
+
     &--animated {
         animation-name: moveInBottom;
         animation-duration: 0.8s;
