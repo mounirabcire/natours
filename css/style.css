@@ -275,9 +275,7 @@ body {
     right: 2rem;
     text-align: end; }
   .card__heading-span {
-    padding: 1rem 1.5rem;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone; }
+    padding: 1rem 1.5rem; }
     .card__heading-span--1 {
       background-image: linear-gradient(to bottom right, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
     .card__heading-span--2 {
@@ -312,6 +310,66 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+
+.story {
+  width: 75%;
+  margin: 0 auto;
+  padding: 6rem;
+  padding-left: 9rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  font-size: 1.6rem;
+  transform: skewX(-12deg); }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webki-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .story__img {
+    height: 100%;
+    transition: all 0.3s;
+    transform: scale(1.3); }
+  .story__text {
+    transform: skewX(12deg); }
+  .story__caption {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.7rem;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    transition: all 0.3s;
+    backface-visibility: hidden; }
+  .story:hover .story__caption {
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  .story:hover .story__img {
+    transform: scale(1);
+    filter: blur(2px) brightness(80%); }
+
+.bg-video {
+  opacity: .15;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+  .bg-video__content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 .row {
   max-width: 114rem;
@@ -378,3 +436,7 @@ body {
   padding: 15rem 0 10rem;
   margin-top: -7rem;
   background: #f7f7f7; }
+
+.section-stories {
+  padding: 15rem 0;
+  position: relative; }

@@ -62,7 +62,6 @@
     &__picture {
         height: 23rem;
         background-size: cover;
-        // ********************************
         background-blend-mode: screen;
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
         &--1 {
@@ -110,9 +109,6 @@
 
     &__heading-span {
         padding: 1rem 1.5rem;
-        // ****************************
-        -webkit-box-decoration-break: clone;
-        box-decoration-break: clone;
 
         &--1 {
             background-image: linear-gradient(
