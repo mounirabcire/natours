@@ -13,7 +13,6 @@
         width: 15rem;
         height: 15rem;
         float: left;
-        // ****************************************************************
         -webki-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
@@ -55,7 +54,6 @@
 
     &:hover &__img {
         transform: scale(1);
-        // ****************************************************************
         filter: blur(2px) brightness(80%);
     }
 }

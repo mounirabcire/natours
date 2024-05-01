@@ -20,17 +20,14 @@
             box-shadow: 0 1rem 2rem rgba($color-dark, 0.1);
         }
 
-        // ****************************
         &:focus:invalid {
             border-bottom: 3px solid $color-secondary-dark;
         }
 
-        // ****************************
         &:focus:valid {
             border-bottom: 3px solid $color-primary-darrk;
         }
 
-        // ****************************
         &::placeholder {
             color: $color-gray-dark-2;
         }
@@ -45,7 +42,6 @@
         transition: all 0.4s;
     }
 
-    // ****************************
     &__input:placeholder-shown ~ &__label {
         opacity: 0;
         visibility: hidden;
