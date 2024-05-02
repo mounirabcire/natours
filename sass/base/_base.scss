@@ -7,13 +7,29 @@
 }
 
 html {
-    // This defines what 1rem actually is 
+    // This defines what 1rem actually is
     // 0.625 * 16 (default browser font size = 10px;)
     // we choose 10px, because it's easy to work with 'rem', 1rem = 10px, 2rem = 20px, 7.5px = 0.75rem
     // if the user changes the default browser font size, it'll be adapted
     // ex: a user changes the font size to 20px, the actual size will be: 0.625 * 20 = 12.5
     // that's why I used percentage
-    font-size: 62.5%;
+    font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+
+    @include respond(tab-lan) {
+        font-size: 56.25%; // 1rem = 9px; 9/16 = 56.25%
+    }
+
+    @include respond(tab-por) {
+        font-size: 50%; // 1rem = 8px; 8/16 = 50%
+    }
+
+     // @include respond(phone){
+    //     font-size: ; 50% will be applied;
+    // }
+
+    @include respond(big-desk) {
+        font-size: 75%; // 1rem = 12px; 12/16 = 75%
+    }
 }
 
 body {

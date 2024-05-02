@@ -6,9 +6,57 @@
     }
 }
 
-@mixin absCenter{
+@mixin absCenter {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+// MEDIA QUERY MANAGER
+/*
+0-600px: Phone
+600 - 900px: Tablet portrait
+900 - 1200px: Tablet landscape
+[1200- 1800px]: is where our normal styles apply
+1800px+: Big desktop 
+
+phone
+tab-por
+tab-lan
+big-desk
+*/
+
+// @mixin respond-phone {
+//     @media (max-width: 600px) {
+//         @content;
+//     }
+// }
+
+// 1em = 16px(browser default font size) 
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == tab-por {
+        @media (max-width: 56.25em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == tab-lan {
+        @media (max-width: 75em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == big-desk {
+        @media (min-width: 112.5em) {
+            @content;
+        }
+    }
 }
