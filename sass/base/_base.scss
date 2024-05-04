@@ -15,19 +15,19 @@ html {
     // that's why I used percentage
     font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
 
-    @include respond(tab-lan) {
+    @include respond(tab-lan) { // width < 1200 ?
         font-size: 56.25%; // 1rem = 9px; 9/16 = 56.25%
     }
 
-    @include respond(tab-por) {
+    @include respond(tab-por) { // width < 900 ?
         font-size: 50%; // 1rem = 8px; 8/16 = 50%
     }
 
-     // @include respond(phone){
+     // @include respond(phone){ // width < 600
     //     font-size: ; 50% will be applied;
     // }
 
-    @include respond(big-desk) {
+    @include respond(big-desk) { // width > 1800
         font-size: 75%; // 1rem = 12px; 12/16 = 75%
     }
 }
