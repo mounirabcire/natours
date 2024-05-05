@@ -4,20 +4,38 @@
 
     &:not(:last-child) {
         margin-bottom: $grid-gutter-vert;
+
+        @include respond(tab-por) {
+            margin-bottom: $grid-gutter-vert-small;
+        }
+    }
+
+    @include respond(tab-por) {
+        max-width: 50rem;
+    }
+
+    @include respond(phone) {
+        padding: 0 3rem;
     }
 
     @include clearFix;
 
-    // select all the classes that contain 'col-';
-    // [class*="col-"]
-    // select all the classes that end with 'col-';
-    // [class$="col-"]
-    // select all the classes that start with 'col-';
     [class^="col-"] {
         float: left;
 
         &:not(:last-child) {
             margin-right: $grid-gutter-hori;
+
+            @include respond(tab-por) {
+                margin-right: 0;
+                margin-bottom: $grid-gutter-vert-small;
+            }
+        }
+
+        // we want to overwrite all the column width below that's
+        //why we used the !important keyword
+        @include respond(tab-por) {
+            width: 100% !important;
         }
     }
 
