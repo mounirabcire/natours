@@ -15,6 +15,10 @@
         width: 90%;
         display: block;
 
+        @include respond(tab-por){
+            width: 100%;
+        }
+
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-dark, 0.1);
@@ -52,6 +56,11 @@
         display: inline-block;
         // width: 45%;
 
+        @include respond(tab-por){
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
         &:not(:last-child){
             margin-right: 4rem;
         }
@@ -71,6 +80,11 @@
         border-radius: 50%;
         outline: 4px solid $color-primary-darrk;
         outline-offset: 4px;
+
+        @include respond(tab-por){
+            width: 7px;
+            height: 7px;
+        }
     }
 
     &__radio-input {

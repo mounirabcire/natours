@@ -4,10 +4,20 @@
     padding: 6rem;
     padding-left: 9rem;
     box-shadow: 0 3rem 6rem rgba($color-dark, 0.1);
-    background-color: rgba($color-white, .6);
+    background-color: rgba($color-white, 0.6);
     border-radius: 3px;
     font-size: $default-font-size;
     transform: skewX(-12deg);
+
+    @include respond(tab-por) {
+        width: 100%;
+        padding: 3rem;
+        padding-left: 5rem;
+    }
+
+    @include respond(phone) {
+        transform: skewX(0);
+    }
 
     &__shape {
         width: 15rem;
@@ -21,6 +31,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include respond(phone) {
+            width: 12rem;
+            height: 12rem;
+            transform: translateX(-3rem) skewX(0);
+        }
     }
 
     &__img {
@@ -31,6 +47,10 @@
 
     &__text {
         transform: skewX(12deg);
+
+        @include respond(phone) {
+            transform: skewX(0);
+        }
     }
 
     &__caption {
