@@ -472,11 +472,25 @@
 
         <footer class="footer">
             <div class="footer__logo-box">
-                <img
-                    src="img/logo-green-2x.png"
-                    alt="Logo"
-                    class="footer__logo"
-                />
+                <!-- **************************************************** -->
+                <picture class="footer__logo">
+                    <source
+                        srcset="
+                            img/logo-green-small-1x.png 1x,
+                            img/logo-green-small-2x.png 2x
+                        "
+                        media="(max-width: 37.5em)"
+                    />
+                    <!-- srcset attribute allows the borowser to choose the best of
+                    this 2 imgages according to the current user's screen resloution (high or low) -->
+                    <img
+                        srcset="
+                            img/logo-green-1x.png 1x,
+                            img/logo-green-2x.png 2x
+                        "
+                        alt="Logo"
+                    />
+                </picture>
             </div>
             <div class="row">
                 <div class="col-1-of-2">
