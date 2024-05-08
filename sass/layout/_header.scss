@@ -5,14 +5,34 @@
             rgba($color-primary-light, 0.8),
             rgba($color-primary-darrk, 0.8)
         ),
-        url("../img/hero.jpg");
+        url("../img/hero-small.jpg");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-    
-    @include respond(phone) { 
+
+    // whenever we have 2x screen and the min width is 600px
+    @media (min-resolution: 192dpi) and (min-width: 37.5em),
+        (min-width: 125em) {
+        background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary-light, 0.8),
+                rgba($color-primary-darrk, 0.8)
+            ),
+            url("../img/hero.jpg");
+    }
+
+    // @media (min-width: 2000px) {
+    //     background-image: linear-gradient(
+    //             to right bottom,
+    //             rgba($color-primary-light, 0.8),
+    //             rgba($color-secondary-dark, 0.8)
+    //         ),
+    //         url("../img/hero.jpg");
+    // }
+
+    @include respond(phone) {
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
     }
 
