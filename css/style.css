@@ -808,11 +808,11 @@ body {
 
 .nav-bar__nav {
   height: 100vh;
-  width: 0;
+  width: 100%;
   opacity: 0;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100vw;
   z-index: 105;
   transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6); }
 
@@ -854,7 +854,7 @@ body {
 
 .nav-bar__checkbox:checked ~ .nav-bar__nav {
   opacity: 1;
-  width: 100%; }
+  left: 0; }
 
 .nav-bar__icon {
   position: absolute;
