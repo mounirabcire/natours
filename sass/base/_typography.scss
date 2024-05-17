@@ -19,7 +19,7 @@ body {
         font-size: 6rem;
         letter-spacing: 3.5rem;
         animation-name: moveInLeft;
-        animation-duration: 0.6s;
+        animation-duration: 1.5s;
 
         @include respond(phone) {
             letter-spacing: 1rem;
@@ -33,10 +33,10 @@ body {
         letter-spacing: 1.74rem;
         font-weight: 700;
         animation-name: moveInRight;
-        animation-duration: 0.6s;
+        animation-duration: 1.5s;
 
-        @include respond(phone) { 
-            letter-spacing: .5rem;
+        @include respond(phone) {
+            letter-spacing: 0.5rem;
         }
     }
 }
@@ -56,18 +56,28 @@ body {
     -webkit-background-clip: text;
     color: transparent;
     transition: all 0.3s;
+    animation: left 0.6s forwards;
 
-    @include respond(tab-por) { 
+    @include respond(tab-por) {
         font-size: 3rem;
     }
 
-    @include respond(phone) { 
+    @include respond(phone) {
         font-size: 2.5rem;
     }
 
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: 0.5rem 1rem 2rem rgba($color-dark, 0.2);
+    }
+
+    @supports (animation-timeline: view()) and (animation-range-start: entry)
+        and (animation-range-end: 50%) {
+        @media (prefers-reduced-motion: no-preference) {
+            animation-timeline: view();
+            animation-range-start: entry;
+            animation-range-end: 50%;
+        }
     }
 }
 
