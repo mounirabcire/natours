@@ -1,17 +1,17 @@
-#natours
-##About This Project 🚀
+# natours
+## About This Project 🚀
 The Natours landing page is a beautiful, interactive website that promotes nature and adventure tours for nature and adventure lovers.
 
-##Technologies 🛠️
+## Technologies 🛠️
 - HTML
 - CSS
 - SASS
 
-##Features 💡
+## Features 💡
 - Responsive Design: Ensures the page looks great and functions well on all devices, including desktops, tablets, and smartphones.
 - Interactive Elements: Smooth animations and transitions that enhance the user experience without overwhelming the visitor.
 
-##Learnings 📚
+## Learnings 📚
 ### How CSS works behind the scenes
 - There are three different CSS sources: author, user, and browser (user agent).
 - When more than one rule applies to a certain element, CSS first looks at the importance, if they have the same importance, then it looks at the specificity, if they have the same specificity, then finally it looks at the source order.
@@ -38,7 +38,7 @@ The Natours landing page is a beautiful, interactive website that promotes natur
 - Use `@supports` when a particular property is being tested.
 
 
-##Running the Project 🚦
+## Running the Project 🚦
 - Clone the repository to your machine. `https://github.com/mounirabcire/natours.git`
 
 - Install dependencies: `cd natours` ` npm install`
@@ -47,5 +47,5 @@ The Natours landing page is a beautiful, interactive website that promotes natur
 
 - Open up your browser
 
-##Demo 📸
+## Demo 📸
 You can start exploring the app here: [natours](http://https://natours-8u9ehwkwy-mounirabcires-projects.vercel.app/ "natours").
