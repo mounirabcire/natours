@@ -48,4 +48,4 @@ The Natours landing page is a beautiful, interactive website that promotes natur
 - Open up your browser
 
 ##Demo 📸
-You can start exploring the app here: [natours](http://https://natours-8u9ehwkwy-mounirabcires-projects.vercel.app/ "natours")
+You can start exploring the app here: [natours](http://https://natours-8u9ehwkwy-mounirabcires-projects.vercel.app/ "natours").
